@@ -109,8 +109,8 @@ function Graphics.new(modules)
     end
 
     graphics.reset = function()
-        graphics.cache.reset()
         graphics.palette.reset()
+        graphics.cache.reset()
 
         -- zero out all of VRAM:
         for i = 0x8000, (0x8000 + (16 * 2 * 1024) - 1) do
