@@ -8,8 +8,8 @@ local isfile = isfile or function(file)
 	return suc and res ~= nil and res ~= ''
 end
 
-getgenv().loadfile = function(file)
-    if isfile(file) or not shared.GBDeveloper then
+getgenv().gbloadfile = function(file)
+    if isfile(file) and not shared.GBDeveloper then
         data = readfile(file)
     else
         data = game:HttpGet('https://raw.githubusercontent.com/Roblox-Thot/RBX-gameboy/refs/heads/main/' .. file:gsub('gayboy/','src/'), true)
