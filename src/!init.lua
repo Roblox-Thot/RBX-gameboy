@@ -12,7 +12,7 @@ getgenv().loadfile = function(file)
     if isfile(file) or not shared.GBDeveloper then
         data = readfile(file)
     else
-        data = game:HttpGet('https://raw.githubusercontent.com/Roblox-Thot/RBX-gameboy/main/' .. file:gsub('gayboy/','src/'), true)
+        data = game:HttpGet('https://raw.githubusercontent.com/Roblox-Thot/RBX-gameboy/refs/heads/main/' .. file:gsub('gayboy/','src/'), true)
         writefile(file, data)
     end
     return loadstring(data,file)
