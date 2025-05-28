@@ -1,6 +1,21 @@
 # Roblox GBA emulator
 Edited Lua GBA emulator for roblox script utils to run
 
+The default controls for PC are
+* Arrow keys is GBA dpad
+* X is A
+* Z is B
+* Enter is Start
+* Right Shift is Select
+
+
+The default controls for controller are
+* Dpad is GBA dpad
+* Y is A
+* X is B
+
+(I haven't added the start/select yet sue me)
+
 ### Example script
 replace sml.gb with any .gb file in workspace
 ```lua
